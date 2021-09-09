@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PotresInfo</string>
+    <string name="near">Blizu</string>
+    <string name="close">Zatvori</string>
+    <string name="save">Spremi</string>
+    <string name="language">Jezik:</string>
+    <string name="min_magn">Najmanja mangituda:</string>
+    <string name="items_number">Broj stavki:</string>
+    <string name="N">sjeverno</string>
+    <string name="NNE">sjeverno-sjeveroistočno</string>
+    <string name="NE">sjeveroistočno</string>
+    <string name="ENE">istokčno-sjeveroistočno</string>
+    <string name="E">istočno</string>
+    <string name="ESE">istočno-jugoistočno</string>
+    <string name="SE">jugoistočno</string>
+    <string name="SSE">južno-jugoistočno</string>
+    <string name="S">južno</string>
+    <string name="SSW">južno-jugozapadno</string>
+    <string name="SW">jugozapadno</string>
+    <string name="WSW">zapadno-jugozapadno</string>
+    <string name="W">zapadno</string>
+    <string name="WNW">zapadno-sjeverozapadno</string>
+    <string name="NW">sjeverozapadno</string>
+    <string name="NNW">sjeverno-sjeverozapadno</string>
+    <string name="of">od</string>
+    <string name="open_in_browser">Otvori u pregledniku</string>
+    <string name="settings">Postavke</string>
+</resources>

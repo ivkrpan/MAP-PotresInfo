@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">PotresInfo</string>
+    <string name="near">Near</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Hrvatski</item>
+    </string-array>
+    <string name="language">Language:</string>
+    <string name="min_magn">Minimum magnitude:</string>
+    <string name="items_number">Number of items:</string>
+    <string name="N">north</string>
+    <string name="NNE">north-northeast</string>
+    <string name="NE">northeast</string>
+    <string name="ENE">east-northeast</string>
+    <string name="E">east</string>
+    <string name="ESE">east-southeast</string>
+    <string name="SE">southeast</string>
+    <string name="SSE">south-southeast</string>
+    <string name="S">south</string>
+    <string name="SSW">south-southwest</string>
+    <string name="SW">southwest</string>
+    <string name="WSW">west-southwest</string>
+    <string name="W">west</string>
+    <string name="WNW">west-northwest</string>
+    <string name="NW">northwest</string>
+    <string name="NNW">north-northwest</string>
+    <string name="of">of</string>
+    <string name="open_in_browser">Open in browser</string>
+    <string name="settings">Settings</string>
+</resources>

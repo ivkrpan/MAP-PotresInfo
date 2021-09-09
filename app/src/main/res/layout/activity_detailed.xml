@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedActivity">
+
+    <TextView
+        android:id="@+id/datetime_tv"
+        android:layout_width="171dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="120dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="06.04.2010. 13:56:22" />
+
+    <TextView
+        android:id="@+id/location_offset_tv"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magnitude_tv"
+        tools:text="30km S of" />
+
+    <TextView
+        android:id="@+id/primary_location_tv"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-black"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_offset_tv"
+        tools:text="Dugi tekst za prikaz lokacije u barem dvije linije" />
+
+    <TextView
+        android:id="@+id/magnitude_tv"
+        android:layout_width="79dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="166dp"
+        android:background="@drawable/circle"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datetime_tv"
+        tools:text="8.9" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="420dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primary_location_tv" />
+
+    <WebView
+        android:id="@+id/webmap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="19dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_browser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primary_location_tv">
+
+    </WebView>
+
+    <Button
+        android:id="@+id/btn_browser"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="11dp"
+        android:onClick="open_browser"
+        android:text="@string/open_in_browser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
